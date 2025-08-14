@@ -1,0 +1,1 @@
+#pragma rtglobals=1macro clear()pclear()proc pclear()string str_list = sortlist(winlist("*",";","WIN:7"),";",16)variable var_index = 0do	killwindow/z $stringfromlist(var_index,str_list)	var_index+=1while(var_index<itemsinlist(str_list))killwaves/a/zkillvariables/a/zkillstrings/a/zkillpath/a/zend

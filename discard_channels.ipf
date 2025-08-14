@@ -1,0 +1,1 @@
+#pragma rtglobals=1macro discard_channels()pdiscard_channels()proc pdiscard_channels()string str_list = sortlist(wavelist("!*_1_*",";",""),";",16)print replacestring(";",str_list,"\r")variable var_index = 0pauseupdatedo	killwaves/z $stringfromlist(var_index,str_list)	var_index+=1while(var_index<itemsinlist(str_list))resumeupdateend
