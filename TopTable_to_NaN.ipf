@@ -1,0 +1,1 @@
+#pragma rtGlobals=1Macro TopTable_to_NaN()pTopTable_to_NaN()proc pTopTable_to_NaN()string/g str_list = sortlist(wavelist("*",";","WIN:"),";",16)print replacestring(";",str_list,"\r")variable/g var_index = 0do	$stringfromlist(var_index,str_list) = NaN	var_index+=1while(var_index<itemsinlist(str_list))end

@@ -1,0 +1,1 @@
+#pragma rtGlobals=1Macro TopTable_to_0()pTopTable_to_0()proc pTopTable_to_0()string/g str_list = sortlist(wavelist("*",";","WIN:"),";",16)print replacestring(";",str_list,"\r")variable/g var_index = 0do	$stringfromlist(var_index,str_list) = 0	var_index+=1while(var_index<itemsinlist(str_list))end
