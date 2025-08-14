@@ -1,0 +1,1 @@
+#pragma rtGlobals=1Macro killwaves_from_textref()pkillwaves_from_textref()proc pkillwaves_from_textref(str_input)string str_inputprompt str_input "input waves (text)"string str_killvariable var_index = 0do	str_kill = $str_input[var_index]	print str_kill	killwaves $str_kill	var_index+=1while(var_index<numpnts($str_input))end
